@@ -30,5 +30,6 @@ public class NewBehaviourScript : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         Vector2 movement = new Vector2(horizontalInput, 0f) * moveSpeed;
         rb.velocity = movement;
+        rb.SetRotation(rb.rotation + 10);
     }
 }
