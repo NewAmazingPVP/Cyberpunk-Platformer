@@ -20,6 +20,7 @@ public class NewBehaviourScript : MonoBehaviour
         if (rb == null)
         {
             rb = gameObject.AddComponent<Rigidbody2D>();
+            rb.useGravity = false;
             Debug.Log("Rigidbody2D added to the GameObject.");
         }
     }
